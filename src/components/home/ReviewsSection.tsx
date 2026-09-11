@@ -1,84 +1,83 @@
 /* 
-  Reviews Section — HIDDEN ON LAUNCH
-  
-  This section is commented out / not rendered. 
-  The card structure is preserved so it can be activated 
-  when real client quotes are available.
-  
-  To activate: Import and add <ReviewsSection /> to HomePage.tsx
+  Reviews Section — Featured Testimonial Hero Block
 */
-
-export const reviewCards = [
-  {
-    stars: 5,
-    quote:
-      'Switching to Liquid Ko Space cut our weekly sourcing time in half. Having one scheduled delivery with locked-in pricing means our kitchen never gets caught off guard.',
-    name: 'Sipho Ndlovu',
-    title: 'Head Chef, Urban Bites (Braamfontein)',
-  },
-  {
-    stars: 5,
-    quote:
-      'Dealing directly with Gujwa has been a game changer for us. If there’s ever a question about stock or special cuts, one quick WhatsApp sorts it immediately.',
-    name: 'Elena Rostova',
-    title: 'Owner, The Corner Table (Rosebank)',
-  },
-  {
-    stars: 5,
-    quote:
-      'Reliable deliveries and zero surprise price jumps. Liquid Ko Space is the supply partner independent kitchens in Gauteng have been waiting for.',
-    name: 'Tebogo Molefe',
-    title: 'Operations Manager, Mzansi Flame Grill (Midrand)',
-  },
-];
 
 export default function ReviewsSection() {
   return (
-    <section id="reviews" className="section bg-paper">
+    <section id="reviews" className="section" style={{ backgroundColor: '#C0EBEB' }}>
       <div className="container text-center">
-        <p className="eyebrow">WHAT OUR CLIENTS SAY</p>
-        <h2 className="h2" style={{ marginBottom: '48px' }}>Built on trust. Proven by results.</h2>
+        <div style={{ maxWidth: '860px', margin: '0 auto' }}>
+          <p className="eyebrow" style={{ color: '#087B8A', marginBottom: '16px' }}>
+            WHAT OUR CLIENTS SAY
+          </p>
+          <blockquote
+            style={{
+              fontSize: 'clamp(24px, 3.2vw, 36px)',
+              fontWeight: 700,
+              lineHeight: 1.35,
+              color: 'var(--color-ink)',
+              letterSpacing: '-0.01em',
+              margin: '0 auto 28px',
+            }}
+          >
+            &ldquo;Thank you so much for your service, very reliable and efficient and I like how it is also open to customers input. We will surely work together.&rdquo;
+          </blockquote>
 
-        <div className="grid-3">
-          {reviewCards.map((review, i) => (
+          {/* Client Details: Picture, Name, and Business Name */}
+          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+            {/* Client Picture */}
             <div
-              className="card"
-              key={i}
               style={{
-                textAlign: 'left',
+                width: '92px',
+                height: '92px',
+                borderRadius: '50%',
+                backgroundColor: '#A2DEDE',
+                border: '3px solid #FFFFFF',
+                overflow: 'hidden',
+                marginBottom: '16px',
                 display: 'flex',
-                flexDirection: 'column',
-                justifyContent: 'space-between',
+                alignItems: 'center',
+                justifyContent: 'center',
+                boxShadow: '0 4px 18px rgba(8, 123, 138, 0.22)',
               }}
             >
-              <div>
-                <div
-                  className="stars"
-                  aria-label={`${review.stars} out of 5 stars`}
-                  style={{ color: 'var(--color-teal)', fontSize: '20px', letterSpacing: '2px', marginBottom: '16px' }}
-                >
-                  {'★'.repeat(review.stars)}
-                </div>
-                <p
-                  style={{
-                    color: 'var(--color-ink)',
-                    fontSize: '16px',
-                    lineHeight: '1.7',
-                    marginBottom: '24px',
-                  }}
-                >
-                  &ldquo;{review.quote}&rdquo;
-                </p>
-              </div>
-
-              <div style={{ borderTop: '1px solid var(--color-grey-mid)', paddingTop: '16px', marginTop: 'auto' }}>
-                <p style={{ fontWeight: 700, fontSize: '15px', color: 'var(--color-ink)', marginBottom: '2px' }}>
-                  {review.name}
-                </p>
-                <p style={{ fontSize: '14px', color: 'var(--color-slate)' }}>{review.title}</p>
-              </div>
+              <img
+                src="/nosipho-dube.jpg"
+                alt="Nosipho Dube, Crisp to Flavour"
+                style={{
+                  width: '100%',
+                  height: '100%',
+                  objectFit: 'cover',
+                  objectPosition: 'center 22%',
+                  display: 'block',
+                }}
+              />
             </div>
-          ))}
+
+            {/* Client Name */}
+            <p
+              style={{
+                fontSize: '18px',
+                fontWeight: 700,
+                color: 'var(--color-ink)',
+                margin: '0 0 4px',
+              }}
+            >
+              Nosipho Dube
+            </p>
+
+            {/* Business Name beneath client name */}
+            <p
+              style={{
+                fontSize: '15px',
+                fontWeight: 500,
+                color: '#4B5563',
+                margin: 0,
+              }}
+            >
+              Crisp to Flavour
+            </p>
+          </div>
         </div>
       </div>
     </section>

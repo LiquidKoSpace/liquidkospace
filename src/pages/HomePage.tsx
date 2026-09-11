@@ -19,13 +19,13 @@ export default function HomePage() {
       </Helmet>
       <main>
         <HeroSection />
+        <ReviewsSection />
         <CategoriesSection />
         <HowItWorksSection />
         <WhoWeServeSection />
         <ProblemSection />
         <WhyChooseUsSection />
         <GuaranteeSection />
-        <ReviewsSection />
         <PartnersSection />
         <FinalCtaSection />
       </main>

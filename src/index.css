@@ -156,10 +156,10 @@ input, textarea, select {
   background-image: 
     linear-gradient(
       to right,
-      rgba(250, 250, 248, 0.98) 0%,
-      rgba(250, 250, 248, 0.94) 42%,
-      rgba(250, 250, 248, 0.72) 70%,
-      rgba(250, 250, 248, 0.38) 100%
+      rgba(250, 250, 248, 0.90) 0%,
+      rgba(250, 250, 248, 0.78) 42%,
+      rgba(250, 250, 248, 0.45) 70%,
+      rgba(250, 250, 248, 0.15) 100%
     ),
     url('/hero-produce.jpg');
   background-size: cover;
@@ -1064,6 +1064,21 @@ input, textarea, select {
   .header-cta {
     margin-left: auto;
     margin-right: 8px;
+  }
+
+  /* Hero section mobile */
+  .hero-section {
+    padding-top: 48px;
+    padding-bottom: 44px;
+    background-image: 
+      linear-gradient(
+        to bottom,
+        rgba(250, 250, 248, 0.78) 0%,
+        rgba(250, 250, 248, 0.60) 50%,
+        rgba(250, 250, 248, 0.42) 100%
+      ),
+      url('/hero-produce.jpg');
+    background-position: center center;
   }
 
   /* Typography responsive */
