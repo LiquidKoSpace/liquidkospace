@@ -12,12 +12,12 @@ export default function ReviewsSection() {
           </p>
           <blockquote
             style={{
-              fontSize: 'clamp(24px, 3.2vw, 36px)',
-              fontWeight: 700,
-              lineHeight: 1.35,
+              fontSize: 'clamp(19px, 2.2vw, 25px)',
+              fontWeight: 600,
+              lineHeight: 1.5,
               color: 'var(--color-ink)',
               letterSpacing: '-0.01em',
-              margin: '0 auto 28px',
+              margin: '0 auto 32px',
             }}
           >
             &ldquo;Thank you so much for your service, very reliable and efficient and I like how it is also open to customers input. We will surely work together again.&rdquo;
@@ -28,17 +28,17 @@ export default function ReviewsSection() {
             {/* Client Picture */}
             <div
               style={{
-                width: '92px',
-                height: '92px',
+                width: '124px',
+                height: '124px',
                 borderRadius: '50%',
                 backgroundColor: '#A2DEDE',
-                border: '3px solid #FFFFFF',
+                border: '4px solid #FFFFFF',
                 overflow: 'hidden',
-                marginBottom: '16px',
+                marginBottom: '18px',
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
-                boxShadow: '0 4px 18px rgba(8, 123, 138, 0.22)',
+                boxShadow: '0 6px 24px rgba(8, 123, 138, 0.22)',
               }}
             >
               <img
@@ -57,10 +57,10 @@ export default function ReviewsSection() {
             {/* Client Name */}
             <p
               style={{
-                fontSize: '18px',
+                fontSize: '22px',
                 fontWeight: 700,
                 color: 'var(--color-ink)',
-                margin: '0 0 4px',
+                margin: '0 0 6px',
               }}
             >
               Nosipho Dube
@@ -69,9 +69,9 @@ export default function ReviewsSection() {
             {/* Business Name beneath client name */}
             <p
               style={{
-                fontSize: '15px',
-                fontWeight: 500,
-                color: '#4B5563',
+                fontSize: '17px',
+                fontWeight: 600,
+                color: '#374151',
                 margin: 0,
               }}
             >
