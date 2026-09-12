@@ -20,7 +20,7 @@ export default function ReviewsSection() {
               margin: '0 auto 28px',
             }}
           >
-            &ldquo;Thank you so much for your service, very reliable and efficient and I like how it is also open to customers input. We will surely work together.&rdquo;
+            &ldquo;Thank you so much for your service, very reliable and efficient and I like how it is also open to customers input. We will surely work together again.&rdquo;
           </blockquote>
 
           {/* Client Details: Picture, Name, and Business Name */}
