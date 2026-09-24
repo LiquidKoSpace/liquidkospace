@@ -21,19 +21,21 @@ export default function ReviewsSection() {
   return (
     <section id="reviews" className="section" style={{ backgroundColor: '#C0EBEB' }}>
       <div className="container text-center">
-        <p className="eyebrow" style={{ color: '#087B8A', marginBottom: '48px' }}>
-          WHAT OUR CLIENTS SAY
-        </p>
+        <div className="text-center" style={{ maxWidth: '640px', margin: '0 auto 32px' }}>
+          <h2 className="h2">
+            What Our Clients Say
+          </h2>
+        </div>
         
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '32px', maxWidth: '960px', margin: '0 auto' }}>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: '20px', maxWidth: '800px', margin: '0 auto' }}>
           {reviews.map((review, index) => (
             <div 
               key={index} 
               style={{ 
                 backgroundColor: 'rgba(255, 255, 255, 0.6)',
                 backdropFilter: 'blur(12px)',
-                borderRadius: '24px',
-                padding: '32px',
+                borderRadius: '20px',
+                padding: '24px',
                 display: 'flex', 
                 flexDirection: 'column', 
                 alignItems: 'center',
@@ -43,11 +45,11 @@ export default function ReviewsSection() {
             >
               <blockquote
                 style={{
-                  fontSize: '16px',
+                  fontSize: 'clamp(14px, 2vw, 15px)',
                   fontWeight: 500,
-                  lineHeight: 1.6,
+                  lineHeight: 1.5,
                   color: '#1f2937',
-                  margin: '0 0 24px 0',
+                  margin: '0 0 16px 0',
                   whiteSpace: 'pre-line',
                   flexGrow: 1
                 }}
@@ -59,13 +61,13 @@ export default function ReviewsSection() {
                 {review.image ? (
                   <div
                     style={{
-                      width: '72px',
-                      height: '72px',
+                      width: '56px',
+                      height: '56px',
                       borderRadius: '50%',
                       backgroundColor: '#A2DEDE',
-                      border: '3px solid #FFFFFF',
+                      border: '2px solid #FFFFFF',
                       overflow: 'hidden',
-                      marginBottom: '12px',
+                      marginBottom: '8px',
                       display: 'flex',
                       alignItems: 'center',
                       justifyContent: 'center',
@@ -87,18 +89,18 @@ export default function ReviewsSection() {
                 ) : (
                   <div
                     style={{
-                      width: '72px',
-                      height: '72px',
+                      width: '56px',
+                      height: '56px',
                       borderRadius: '50%',
                       backgroundColor: '#A2DEDE',
-                      border: '3px solid #FFFFFF',
+                      border: '2px solid #FFFFFF',
                       overflow: 'hidden',
-                      marginBottom: '12px',
+                      marginBottom: '8px',
                       display: 'flex',
                       alignItems: 'center',
                       justifyContent: 'center',
                       boxShadow: '0 4px 12px rgba(8, 123, 138, 0.15)',
-                      fontSize: '24px',
+                      fontSize: '20px',
                       fontWeight: 'bold',
                       color: '#087B8A'
                     }}
@@ -108,17 +110,17 @@ export default function ReviewsSection() {
                 )}
                 <p
                   style={{
-                    fontSize: '16px',
+                    fontSize: '15px',
                     fontWeight: 700,
                     color: '#111827',
-                    margin: '0 0 4px',
+                    margin: '0 0 2px',
                   }}
                 >
                   {review.name}
                 </p>
                 <p
                   style={{
-                    fontSize: '14px',
+                    fontSize: '13px',
                     fontWeight: 500,
                     color: '#4B5563',
                     margin: 0,
